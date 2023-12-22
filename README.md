@@ -1,5 +1,5 @@
-**Quickstart:
-**
+**Quickstart:**
+
 - To run the game, simply load the project in IntelliJ Idea and start the application from the TicTacToeApplication class.
 - OpenJDK 17 or newer is required. 
 
