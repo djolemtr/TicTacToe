@@ -47,7 +47,7 @@ public class TicTacToeLogic {
             return true;
         }
 
-        //checking horisontal buttons
+        //checking horizontal buttons
 
         if (b1.getText().equals("X") && b4.getText().equals("X") && b7.getText().equals("X")) {
             return true;

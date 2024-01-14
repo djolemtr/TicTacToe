@@ -2,11 +2,13 @@ package com.example.tictactoe;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 public class TicTacToeApplication extends Application {
@@ -24,6 +26,7 @@ public class TicTacToeApplication extends Application {
         label.setFont(Font.font("Monospaced", 30));
 
         GridPane view = new GridPane();
+        view.setStyle("-fx-background-color: #404040;-fx-alignment:center;");
 
         view.setHgap(10);
         view.setVgap(10);
@@ -60,7 +63,10 @@ public class TicTacToeApplication extends Application {
         view.add(b8, 1, 2, 1, 1);
         view.add(b9, 2, 2, 1, 1);
 
-        layout.setTop(label);
+        HBox hbox = new HBox(label);
+        hbox.setAlignment(Pos.CENTER);
+
+        layout.setTop(hbox);
         layout.setCenter(view);
         view.setHgap(10);
         view.setVgap(10);
